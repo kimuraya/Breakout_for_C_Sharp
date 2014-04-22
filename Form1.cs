@@ -35,14 +35,14 @@ namespace Breakout_for_C_Sharp
            	//描画先グラフィック領域の指定
             DX.SetDrawScreen(DX.DX_SCREEN_BACK);
 
-	            //ウィンドウのタイトルを変更する
+            //ウィンドウのタイトルを変更する
             string titleStr = "Breakout";
             DX.SetMainWindowText(titleStr);
 
             GameMain gameMain = new GameMain(); //ゲーム本体を作成
 
                 
-	            // 裏画面を表画面に反映、ウインドウのメッセージを処理、画面を消す
+            // 裏画面を表画面に反映、ウインドウのメッセージを処理、画面を消す
             while (DX.ScreenFlip() == 0 && DX.ProcessMessage() == 0 && DX.ClearDrawScreen() == 0)
             {
 
